@@ -1,10 +1,13 @@
 package com.example.healthservices;
 
+import java.security.PublicKey;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,13 +17,14 @@ import android.view.animation.AnimationUtils;
 import android.webkit.WebView.FindListener;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class SearchadoctorFragment extends Fragment {
 	Button searchbtn_searchdocs;
 	int city = 0, speciality = 0, num_value;
 	ImageView imageview2, imageview1, imageview3, imageview4,imageview5,imageview6,imageview7,imageview8,imageview9,imageview10,imageview11,imageview12,imageview13,imageview14,imageview15,imageview16;
-
-	@Override
+    
+	
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -62,6 +66,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview1.setImageResource(R.drawable.cschemecopy);
+				Toast.makeText(getActivity(), "Now tap on a speciality!",Toast.LENGTH_SHORT).show();
+				show();
 				city = 1;
 			}
 		});
@@ -72,6 +78,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview2.setImageResource(R.drawable.malviyanagarcopy);
+				Toast.makeText(getActivity(), "Now tap on a speciality!",Toast.LENGTH_SHORT).show();
+				show();
 				city = 2;
 			}
 		});
@@ -82,6 +90,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview3.setImageResource(R.drawable.mansarovarcopy);
+				Toast.makeText(getActivity(), "Now tap on a speciality!",Toast.LENGTH_SHORT).show();
+				show();
 				city = 3;
 			}
 		});
@@ -92,6 +102,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview5.setImageResource(R.drawable.miroadcopy);
+				Toast.makeText(getActivity(), "Now tap on a speciality!",Toast.LENGTH_SHORT).show();
+				show();
 				city = 4;
 			}
 		});
@@ -102,6 +114,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview4.setImageResource(R.drawable.rajaparkcopy);
+				Toast.makeText(getActivity(), "Now tap on a speciality!",Toast.LENGTH_SHORT).show();
+				show();
 				city = 5;
 			}
 		});
@@ -112,6 +126,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview6.setImageResource(R.drawable.civillinescopy);
+				Toast.makeText(getActivity(), "Now tap on a speciality!",Toast.LENGTH_SHORT).show();
+				show();
 				city = 6;
 			}
 		});
@@ -121,8 +137,11 @@ public class SearchadoctorFragment extends Fragment {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				speciality = 1;
+				
 				imageview7.setImageResource(R.drawable.onecopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
+				speciality=1;
 			}
 		});
 		imageview8.setOnClickListener(new View.OnClickListener() {
@@ -131,6 +150,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview8.setImageResource(R.drawable.twocopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
 				speciality = 2;
 			}
 		});
@@ -140,6 +161,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview9.setImageResource(R.drawable.threecopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
 				speciality = 3;
 			}
 		});
@@ -149,6 +172,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview10.setImageResource(R.drawable.fourcopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
 				speciality = 4;
 			}
 		});
@@ -158,6 +183,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview11.setImageResource(R.drawable.fivecopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
 				speciality = 5;
 			}
 		});
@@ -167,6 +194,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview12.setImageResource(R.drawable.sixcopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
 				speciality = 6;
 			}
 		});
@@ -176,6 +205,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview13.setImageResource(R.drawable.sevencopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
 				speciality = 7;
 			}
 		});
@@ -185,6 +216,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview14.setImageResource(R.drawable.eightcopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
 				speciality = 8;
 			}
 		});
@@ -194,6 +227,8 @@ public class SearchadoctorFragment extends Fragment {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				imageview15.setImageResource(R.drawable.ninecopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
 				speciality = 9;
 			}
 		});
@@ -202,7 +237,10 @@ public class SearchadoctorFragment extends Fragment {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
+				
 				imageview16.setImageResource(R.drawable.tencopy);
+				Toast.makeText(getActivity(), "Ready to search!",Toast.LENGTH_SHORT).show();
+				show1();
 				speciality = 10;
 			}
 		});
@@ -246,5 +284,77 @@ public class SearchadoctorFragment extends Fragment {
 		
 		
 	}
+	public void show()
+	{
+		switch (city) {
+		case 0:
+			
+			break;
+		case 1:imageview1.setImageResource(R.drawable.cscheme);
+			
+			break;
+		case 2:imageview2.setImageResource(R.drawable.malviyanagar);
+			
+			break;
+		case 3:imageview3.setImageResource(R.drawable.mansarovar);
+	
+			break;
+		case 4:imageview5.setImageResource(R.drawable.miroad);
+	
+			break;
+		case 5:imageview4.setImageResource(R.drawable.rajapark);
+			
+			break;
+		case 6:imageview6.setImageResource(R.drawable.civillines);
+	
+	        break;
 
+		default:
+			break;
+		}
+		
+	
+
+}
+	public void show1()
+	{switch (speciality) {
+	case 0:
+		
+		break;
+case 1:imageview7.setImageResource(R.drawable.one);
+		
+		break;
+case 2:imageview8.setImageResource(R.drawable.two);
+	
+	break;
+case 3:imageview9.setImageResource(R.drawable.three);
+	
+	break;
+case 4:imageview10.setImageResource(R.drawable.four);
+	
+	break;
+case 5:imageview11.setImageResource(R.drawable.five);
+	
+	break;
+case 6:imageview12.setImageResource(R.drawable.six);
+	
+	break;
+case 7:imageview13.setImageResource(R.drawable.seven);
+	
+	break;
+case 8:imageview14.setImageResource(R.drawable.eight);
+	
+	break;
+case 9:imageview15.setImageResource(R.drawable.nine);
+	
+	break;
+case 10:imageview16.setImageResource(R.drawable.ten);
+	
+	break;
+
+	default:
+		break;
+	}
+
+}
 }
