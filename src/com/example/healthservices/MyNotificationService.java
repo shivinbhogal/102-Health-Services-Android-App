@@ -48,6 +48,8 @@ public class MyNotificationService extends Service {
 		String contentTitle="Intake Reminder:";
 		String contentText=message;
 		notification.setLatestEventInfo(this, contentTitle, contentText, pendingIntent);
+		notification.defaults |= Notification.DEFAULT_SOUND;
+		notification.defaults |= Notification.DEFAULT_VIBRATE;
 		notificationManager.notify(123, notification);
 		
 		
